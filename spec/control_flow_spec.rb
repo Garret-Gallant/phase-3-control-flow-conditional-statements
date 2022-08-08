@@ -82,7 +82,7 @@ describe '#calculator' do
   end
   
   it 'outputs an error message for invalid operators' do
-    expect { calculator('nope', 4, 2) }.to output(a_string_including('Invalid operation!')).to_stdout
+    expect { calculator('nope', 4, 2) }.to output(a_string_including('error.')).to_stdout
   end
 
   it 'returns nil for invalid operators' do
